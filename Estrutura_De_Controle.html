@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estruturas de Controle</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="Icons/python.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <h1>Estruturas de Controle</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="Variaveis.html">Variáveis</a></li>
+                <li><a href="Estrutura_De_Controle.html">Estrutura de Controle</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>1. Condicional: `if`, `elif` e `else`</h2>
+            <p>As estruturas condicionais permitem que o programa tome decisões com base em condições lógicas.</p>
+
+            <h3>Estrutura Básica:</h3>
+            <pre><code> 
+if condição:
+    # código a ser executado se a condição for verdadeira
+elif outra_condição:
+    # código a ser executado se a outra_condição for verdadeira
+else:
+    # código a ser executado se nenhuma das condições for verdadeira
+</code></pre>
+
+            <h3>Exemplo:</h3>
+            <pre><code>
+idade = 20
+
+if idade >= 18:
+    print("Você é maior de idade.")
+elif idade >= 12:
+    print("Você é um adolescente.")
+else:
+    print("Você é uma criança.")
+</code></pre>
+            <p>Este código verifica a idade de uma pessoa e imprime a classificação correspondente.</p>
+        </section>
+
+        <section>
+            <h2>2. Laços de Repetição</h2>
+            <p>Laços de repetição são usados para executar um bloco de código várias vezes.</p>
+
+            <h3>2.1 Laço `for`</h3>
+            <p>O laço `for` é usado quando sabemos de antemão quantas vezes o código precisa ser repetido. Ele é geralmente usado para iterar sobre sequências (como listas ou strings), mas pode ser usado de maneira mais simples.</p>
+
+            <h3>Exemplo:</h3>
+            <pre><code>
+for i in range(5):
+    print(i)
+</code></pre>
+            <p>Este código imprime os números de 0 a 4, utilizando o `range(5)` para gerar os números de 0 a 4.</p>
+
+            <h3>2.2 Laço `while`</h3>
+            <p>O laço `while` é usado quando não sabemos quantas vezes o código será repetido, mas a repetição continua enquanto uma condição for verdadeira.</p>
+
+            <h3>Exemplo:</h3>
+            <pre><code>
+contador = 0
+
+while contador < 5:
+    print(contador)
+    contador += 1
+</code></pre>
+            <p>Este código imprime os números de 0 a 4. O laço continua até a condição `contador < 5` ser falsa.</p>
+        </section>
+
+        <section>
+            <h2>3. Comandos de Controle</h2>
+            <p>O Python oferece comandos que ajudam a controlar a execução dos laços e das estruturas condicionais:</p>
+
+            <h3>3.1 Comando `break`</h3>
+            <p>O comando `break` interrompe um laço antes que ele termine normalmente.</p>
+
+            <h3>Exemplo:</h3>
+            <pre><code>
+for i in range(10):
+    if i == 5:
+        break
+    print(i)
+</code></pre>
+            <p>O laço imprimirá os números de 0 a 4 e interromperá quando `i` for igual a 5.</p>
+
+            <h3>3.2 Comando `continue`</h3>
+            <p>O comando `continue` pula a iteração atual e continua com a próxima iteração do laço.</p>
+
+            <h3>Exemplo:</h3>
+            <pre><code>
+for i in range(5):
+    if i == 3:
+        continue
+    print(i)
+</code></pre>
+            <p>Este código ignora o número 3 e imprime os números 0, 1, 2, 4.</p>
+
+            <h3>3.3 Comando `pass`</h3>
+            <p>O comando `pass` não faz nada. Ele é usado como um placeholder quando a sintaxe exige um bloco de código, mas você não quer fazer nada.</p>
+
+            <h3>Exemplo:</h3>
+            <pre><code>
+for i in range(5):
+    if i == 3:
+        pass  # Não faz nada quando i for igual a 3
+    print(i)
+</code></pre>
+            <p>A saída desse código será 0, 1, 2, 3, 4, mas com o `pass`, o número 3 não será tratado de maneira especial.</p>
+        </section>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="Icons/python.ico" type="image/x-icon">
+    <title>Variaveis</title>
+</head>
+<body>
+    <Header>
+        <h1>Variaveis</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="Variaveis.html">Variáveis</a></li>
+                <li><a href="Estrutura_De_Controle.html">Estrutura de Controle</a></li>
+            </ul>
+        </nav>
+    </Header>
+    <main>
+        <h2>O que são Variáveis?</h2>
+
+        <p><strong>Variáveis</strong> são espaços na memória onde podemos armazenar valores temporários. Essas variáveis podem ser usadas para manipular, calcular e passar informações ao longo do seu código.</p>
+
+        <p>Por exemplo, quando você cria uma variável para armazenar a idade de uma pessoa, você está guardando um valor numérico (um inteiro) nessa variável, que pode ser usado para realizar outras operações ou exibir para o usuário.</p>
+
+        <h2>Como Criar e Usar Variáveis</h2>
+
+        <p>Em Python, não é necessário declarar o tipo da variável antes de usá-la, pois o tipo é inferido automaticamente com base no valor atribuído.</p>
+        <pre><code>
+            idade = 25  # A variável 'idade' recebe um valor inteiro
+            nome = "João"  # A variável 'nome' recebe uma string
+        </code></pre>
+        <p>No exemplo acima, a variável <strong>idade</strong> está armazenando um número inteiro e a variável <strong>nome</strong> está armazenando uma cadeia de caracteres (string).</p>
+        <h2>Tipos de Dados em Python</h2>
+        <p>Em Python, existem vários tipos de dados que você pode usar. Os tipos de dados mais comuns são:</p>
+        <ol>
+            <li>Inteiro (int): Números inteiros, sem ponto decimal.</li>
+            <li>Ponto flutuante (float): Números com ponto decimal.</li>
+            <li>String (str): Texto ou sequências de caracteres.</li>
+            <li>Booleano (bool): Valores lógicos, que podem ser True ou False.</li>
+        </ol>
+
+        <h2>Tabela de Tipos de Dados</h2>
+
+        <p>Veja a tabela a seguir para entender os principais tipos de dados em Python:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Tipo de Dados</th>
+                    <th>Descrição</th>
+                    <th>Exemplo</th>
+                    <th>Tamanho Aproximado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>int</strong></td>
+                    <td>Números inteiros, sem ponto decimal.</td>
+                    <td><code>a = 5</code></td>
+                    <td>Dependente do sistema</td>
+                </tr>
+                <tr>
+                    <td><strong>float</strong></td>
+                    <td>Números com ponto decimal.</td>
+                    <td><code>b = 3.14</code></td>
+                    <td>Dependente do sistema</td>
+                </tr>
+                <tr>
+                    <td><strong>str</strong></td>
+                    <td>Sequências de caracteres (texto).</td>
+                    <td><code>nome = "Maria"</code></td>
+                    <td>Variável</td>
+                </tr>
+                <tr>
+                    <td><strong>bool</strong></td>
+                    <td>Valores lógicos: True ou False.</td>
+                    <td><code>flag = True</code></td>
+                    <td>1 byte</td>
+                </tr>
+                <tr>
+                    <td><strong>list</strong></td>
+                    <td>Lista ordenada e mutável de elementos.</td>
+                    <td><code>lista = [1, 2, 3]</code></td>
+                    <td>Variável</td>
+                </tr>
+                <tr>
+                    <td><strong>tuple</strong></td>
+                    <td>Tupla ordenada e imutável de elementos.</td>
+                    <td><code>tupla = (1, 2, 3)</code></td>
+                    <td>Variável</td>
+                </tr>
+                <tr>
+                    <td><strong>dict</strong></td>
+                    <td>Dicionário com pares chave-valor.</td>
+                    <td><code>dicionario = {'chave': 10}</code></td>
+                    <td>Variável</td>
+                </tr>
+                <tr>
+                    <td><strong>set</strong></td>
+                    <td>Conjunto (coleção sem elementos duplicados).</td>
+                    <td><code>conjunto = {1, 2, 3}</code></td>
+                    <td>Variável</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Explicação dos Tipos de Dados</h2>
+        <p>int: O tipo <strong>int</strong> (inteiro) é usado para representar números inteiros, como 1, 100, -50, etc. Não é possível ter valores decimais com esse tipo de dado.</p>
+        <pre><code>Exemplo: numero = 10</code></pre>
+        <p>float: O tipo <strong>float</strong> é usado para representar números com ponto flutuante, ou seja, números que possuem casas decimais.</p>
+        <pre><code>Exemplo: pi = 3.14159</code></pre>
+        <p>str: O tipo <strong>str</strong> (string) é utilizado para armazenar sequências de caracteres, ou seja, texto. As strings podem ser envolvidas por aspas simples ou duplas.</p>
+        <pre><code>Exemplo: nome = "Carlos"</code></pre>
+        <p>bool: O tipo <strong>bool</strong> (booleano) é usado para armazenar valores lógicos. Ele pode ter apenas dois valores possíveis: True (verdadeiro) ou False (falso).</p>
+        <pre><code>Exemplo: flag = True</code></pre>
+        <h2>Conversão de Tipos</h2>
+        <ol>
+            <li>int(): Converte um valor para inteiro.</li>
+            <li>float(): Converte um valor para ponto flutuante.</li>
+            <li> str(): Converte um valor para string.</li>
+            <li>bool(): Converte um valor para booleano.</li>
+        </ol>
+        <h3>Exemplo de conversão de tipos:</h3>
+        <pre><code># Convertendo string para inteiro
+numero = int("10")
+
+# Convertendo inteiro para string
+texto = str(100)
+
+# Convertendo valor inteiro para booleano
+booleano = bool(1)  # 1 é considerado como True</code></pre>
+        <h2>Usando Tipos em Operações</h2>
+        <p>Operações com <strong>int</strong> e <strong>float</strong>: Você pode realizar operações matemáticas com inteiros e flutuantes, como soma, subtração, multiplicação e divisão.</p>
+        <pre><code>Exemplo:
+a = 5
+b = 2.5
+soma = a + b  # 5 + 2.5 = 7.5</code></pre>
+        <p>Operações com <strong>str</strong>: Strings podem ser concatenadas com o operador + e repetidas com o operador *</p>
+        <pre><code>Exemplo:
+saudacao = "Olá, " + "Maria!"  # Resultado: "Olá, Maria!"
+repeticao = "Olá! " * 3  # Resultado: "Olá! Olá! Olá! "
+        </code></pre>
+        <p>Operações com bool: Os valores booleanos podem ser usados com operadores lógicos, como and, or, e not.</p>
+        <pre><code>Exemplo:
+a = True
+b = False
+resultado = a and b  # Resultado: False
+        </code></pre>
+    </main>
+        
+</body>
+</html>
