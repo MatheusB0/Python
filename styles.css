@@ -26,9 +26,9 @@ body {
 
 /* Cabeçalho */
 header {
-    background-color: #4CAF50;
+    background-color: #306998;
     color: white;
-    padding: 15px 0 0px 0px;
+    padding: 15px 0px 0px 0px;
     text-align: center;
 }
 
@@ -61,7 +61,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #4CAF50;
+    color: #FFD43B;
 }
 
 /* Corpo principal */
@@ -76,7 +76,7 @@ main {
 h2 {
     font-size: 1.8em;
     margin-bottom: 10px;
-    color: #4CAF50;
+    color: #306998;
 }
 
 h3 {
@@ -102,7 +102,7 @@ table th, table td {
 }
 
 table th {
-    background-color: #4CAF50;
+    background-color: #306998;
     color: white;
 }
 
@@ -124,7 +124,7 @@ ul {
     margin-left: 20px;
     list-style-type: square;
 }
-ol
+.circle
 {
     margin-left: 20px;
     list-style-type: circle;
@@ -159,7 +159,7 @@ footer {
 
 /* Estilo do link de navegação */
 a {
-    color: #4CAF50;
+    color: #306998;
     text-decoration: none;
 }
 
