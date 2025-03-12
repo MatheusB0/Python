@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-be">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="Icons/python.ico" type="image/x-icon">
+    <title>Listas</title>
+</head>
+<body>
+    <header>
+        <h1>Listas</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="Variaveis.html">Variáveis</a></li>
+                <li><a href="Estrutura_De_Controle.html">Estrutura de Controle</a></li>
+                <li><a href="#">Listas</a></li>
+                <li><a href="listas_aninhadas.html">Listas Aninhadas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <h2>Listas</h2>
+    <p>Listas são usadas para armazenar varíos itens em uma variável.</p>
+    <p>Listas são um dos quatros tipos de dados internos do <strong>Python</strong> usados para armazenar coleções de dados; os outros três são <ins>Tuple</ins>, <ins>Set</ins> e <ins>Dictionary</ins>, todos com qualidades e usos diferentes.</p>
+    <p>As listas são criadas usando colchetes:</p>
+    <pre><code><strong>Exemplo:</strong>
+    lista =["maça", "banana", "cereja"]
+    print(lista)
+
+<strong>Saida:</strong>
+    ['apple', 'banana', 'cherry']
+    </code></pre>
+    <h3>Itens da lista</h3>
+    <p>Os itens de uma lista são ordenados, alteráveis e permitem valores duplicados.</p>
+    <p>os itens da lista são indexados, o primeiro tem indice <mark class="red">[0]</mark>, o segundo item tem indice <mark class="red">[1]</mark> e assim por diante.</p>
+    <h2>Ordenado</h2>
+    <p>Quando dizemos que as listas são ordenadas, isso significa que os itens têm uma ordem definida e essa ordem não mudará</p>
+    <sub class="obs">Observação: existem alguns métodos de lista que alteram a ordem, mas, em geral, a ordem dos itens não muda.</sub>
+    <h2>Mutável</h2>
+    <p>A lista é mutável, o que significa que podemos alterar, adicionar e remover itens de uma lista depois que ela foi criada.</p>
+    <h2>Permitir Duplicatas</h2>
+    <p>Como as listas são indexadas, elas podem ter itens com o mesmo valor</p>
+    <pre><code><strong>Exemplo:</strong>
+    lista = ["maça","banana","cereja","maça","cereja"]
+    print(lista)
+
+<strong>Saida:</strong>
+    ['maça', 'banana', 'cereja', 'maça', 'cereja']
+    </code></pre>
+    <h2>Comprimento da lista</h2>
+    <p>Para determinar quantos itens uma lista possui, use a <mark class="red">len()</mark>função.</p>
+    <pre><code><strong>Exemplo:</strong>
+    lista = ["maça","banana","cereja"]
+    print(len(lista))
+
+<strong>Saida:</strong>
+    3
+    </code></pre>
+    <h2>Itens da lista - Tipos de dados</h2>
+    <p>Os itens de uma lista podem ser de qualquer tipo de dados.</p>
+    <pre><code><strong>Exemplo:</strong>
+    lista1 = ["maça", "banana", "cereja"]
+    lista2 = [1, 5, 7, 12, 3]
+    lista3 = [True, False, False, True]
+
+<strong>Saida:</strong>
+    ['maça', 'banana', 'cereja']
+    [1, 5, 7, 12, 3]
+    [True, False, False, True]
+    </strong></code></pre>
+    <p>Uma lista pode contem diferentes tipos de dados.</p>
+    <pre><code><strong>Exemplo:</strong>
+    lista1 = ["abc", 34, True, 40]
+
+<strong>Saida:</strong>
+    ['abc', 34, True, 40]
+    </code></pre>
+    <h2>type()</h2>
+    <p>Da perspectiva do Python, listas são definidas como objetos com o tipo de dados 'list':</p>
+    <pre><code>&lt;class 'list'&gt;</code></pre>
+    <pre><code><strong>Exemplo:</strong>
+    lista = ["maça", "banana", "cereja"]
+    print(type(lista))
+
+<strong>Saida:</strong>
+    &lt;class 'list'&gt;
+    </code></pre>
+    <h2>O construtor list()</h2>
+    <p>Também é possível usar o construtor <mark class="red">list()</mark> ao criar uma nova lista.</p>
+    <pre><code><strong>Exemplo:</strong>
+    #Observe que ultlizamos colchetes duplos
+    lista = list(("maça", "banana", "cereja")) 
+    print(lista)
+
+<strong>Saida:</strong>
+    ['maça', 'banana', 'cereja']
+    </code></pre>
+    </main>
+</body>
+</html>

@@ -166,3 +166,10 @@ a {
 a:hover {
     text-decoration: underline;
 }
+.red {
+    background-color: white;
+    color: red;
+}
+.obs{
+    background-color: #FFD43B;
+}

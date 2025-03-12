@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-be">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="Icons/python.ico" type="image/x-icon">
+    <title>Listas Aninhadas</title>
+</head>
+<body>
+    <header>
+        <h1>Listas Aninhadas</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="Variaveis.html">Variáveis</a></li>
+                <li><a href="Estrutura_De_Controle.html">Estrutura de Controle</a></li>
+                <li><a href="Listas.html">Listas</a></li>
+                <li><a href="#">Listas Aninhadas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Listas Aninhadas</h2>
+        <p>Listas aninhadas são listas dentro de outras listas, ou seja, uma lista pode armazenar outras listas como seus elementos. Isso é útil para representar dados mais complexos, como matrizes ou tabelas.</p>
+
+        <h3>Como Criar uma Lista Aninhada?</h3>
+        <p>Existem duas formas principais de criar listas aninhadas:</p>
+
+        <h4>1. Criando Diretamente com Colchetes</h4>
+        <pre><code><strong>Exemplo:</strong>
+lista_aninhada = [[1, 2, 3], ["a", "b", "c"], [True, False]]
+print(lista_aninhada)
+
+<strong>Saída:</strong>
+[[1, 2, 3], ['a', 'b', 'c'], [True, False]]
+        </code></pre>
+        
+        <p><strong>Representação Visual:</strong></p>
+        <pre>
+lista_aninhada
+├── [1, 2, 3]   <- Sublista 1
+├── ['a', 'b', 'c'] <- Sublista 2
+└── [True, False] <- Sublista 3
+        </pre>
+
+        <h4>2. Usando o Construtor <code>list()</code></h4>
+        <pre><code><strong>Exemplo:</strong>
+lista_aninhada = list([[1, 2, 3], ["a", "b", "c"], [True, False]])
+print(lista_aninhada)
+
+<strong>Saída:</strong>
+[[1, 2, 3], ['a', 'b', 'c'], [True, False]]
+        </code></pre>
+
+        <p><strong>Representação Visual:</strong></p>
+        <pre>
+lista_aninhada
+├── [1, 2, 3]   <- Sublista 1
+├── ['a', 'b', 'c'] <- Sublista 2
+└── [True, False] <- Sublista 3
+        </pre>
+
+        <h3>Como Acessar Itens em Listas Aninhadas?</h3>
+        <p>Você pode acessar itens em listas aninhadas usando múltiplos índices. O primeiro índice acessa a lista externa e o segundo índice acessa os elementos dentro da sublista.</p>
+        <pre><code><strong>Exemplo:</strong>
+lista_aninhada = [[1, 2, 3], ["a", "b", "c"], [True, False]]
+print(lista_aninhada[0][0])  # Acessa o primeiro item da primeira sublista (1)
+
+<strong>Saída:</strong>
+1
+        </code></pre>
+
+        <h3>Resumo</h3>
+        <p>Listas aninhadas permitem que você armazene coleções de listas, facilitando o gerenciamento de dados em múltiplas dimensões. Você pode criar listas aninhadas diretamente com colchetes ou utilizando o construtor <code>list()</code>. Acesse os itens internos usando múltiplos índices.</p>
+    </main>
+</body>
+</html>
