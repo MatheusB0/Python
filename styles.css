@@ -2,7 +2,7 @@
 /* Responsividade: quando a tela for menor que 768px, o menu lateral será oculto */
 @media screen and (max-width: 768px) {
     table {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     th, td {
