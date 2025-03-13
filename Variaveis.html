@@ -10,7 +10,9 @@
 <body>
     <Header>
         <h1>Variaveis</h1>
-        <nav>
+        <button class="toggle-btn" onclick="toggleMenu()">☰</button>
+    </header>
+        <div id="sidebar" class="sidebar">
             <ul>
                 <li><a href="index.html">Início</a></li>
                 <li><a href="#">Variáveis</a></li>
@@ -18,8 +20,8 @@
                 <li><a href="Listas.html">Listas</a></li>
                 <li><a href="listas_aninhadas.html">Listas Aninhadas</a></li>
             </ul>
-        </nav>
-    </Header>
+        </div>
+    
     <main>
         <h2>O que são Variáveis?</h2>
 
@@ -192,6 +194,7 @@ a = True
 b = False
 resultado = a and b  # Resultado: False
         </code></pre>
+    <script src="script.js"></script>
     </main>
         
 </body>

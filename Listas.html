@@ -10,7 +10,9 @@
 <body>
     <header>
         <h1>Listas</h1>
-        <nav>
+        <button class="toggle-btn" onclick="toggleMenu()">☰</button>
+    </header>
+        <div id="sidebar" class="sidebar">
             <ul>
                 <li><a href="index.html">Início</a></li>
                 <li><a href="Variaveis.html">Variáveis</a></li>
@@ -18,8 +20,8 @@
                 <li><a href="#">Listas</a></li>
                 <li><a href="listas_aninhadas.html">Listas Aninhadas</a></li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    
     <main>
     <h2>Listas</h2>
     <p>Listas são usadas para armazenar varíos itens em uma variável.</p>
@@ -30,7 +32,7 @@
     print(lista)
 
 <strong>Saida:</strong>
-    ['apple', 'banana', 'cherry']
+    ['maça', 'banana', 'cereja']
     </code></pre>
     <h3>Itens da lista</h3>
     <p>Os itens de uma lista são ordenados, alteráveis e permitem valores duplicados.</p>
@@ -98,5 +100,6 @@
     ['maça', 'banana', 'cereja']
     </code></pre>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>

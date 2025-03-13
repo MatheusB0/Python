@@ -28,7 +28,7 @@ body {
 header {
     background-color: #306998;
     color: white;
-    padding: 15px 0px 0px 0px;
+    padding: 15px 0px 15px 0px;
     text-align: center;
 }
 
@@ -173,3 +173,79 @@ a:hover {
 .obs{
     background-color: #FFD43B;
 }
+.toggle-btn {
+    font-size: 30px;
+    background-color: #306998;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    z-index: 1000;
+    cursor: pointer;
+     transition: background-color 0.3s ease;
+}
+.toggle-btn.active {
+    background-color: #333;
+}
+
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    left: -250px; 
+    top: 0;
+    background-color: #333;
+    transition: left 0.3s ease;
+    padding-top: 60px;
+}
+
+.sidebar.active {
+    left: 0; 
+    
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    background-color: #575757;
+}
+
+
+/* Responsividade: quando a tela for menor que 768px, o menu lateral será oculto */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .sidebar.active {
+        left: 0;
+    }
+    header h1{
+        font-size: 25px;
+    }
+    .toggle-btn {
+        top: 5px;
+    }
+
+}
+

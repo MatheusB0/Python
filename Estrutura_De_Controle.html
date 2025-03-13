@@ -13,7 +13,9 @@
 
     <header>
         <h1>Estruturas de Controle</h1>
-        <nav>
+        <button class="toggle-btn" onclick="toggleMenu()">☰</button>
+    </header>
+        <div id="sidebar" class="sidebar">
             <ul>
                 <li><a href="index.html">Início</a></li>
                 <li><a href="Variaveis.html">Variáveis</a></li>
@@ -21,8 +23,8 @@
                 <li><a href="Listas.html">Listas</a></li>
                 <li><a href="listas_aninhadas.html">Listas Aninhadas</a></li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    
 
     <main>
         <section>
@@ -122,7 +124,7 @@ for i in range(5):
             <p>A saída desse código será 0, 1, 2, 3, 4, mas com o `pass`, o número 3 não será tratado de maneira especial.</p>
         </section>
     </main>
-
+    <script src="script.js"></script>
 </body>
 
 </html>

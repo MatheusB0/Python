@@ -10,7 +10,9 @@
 <body>
     <header>
         <h1>Listas Aninhadas</h1>
-        <nav>
+        <button class="toggle-btn" onclick="toggleMenu()">☰</button>
+    </header>
+        <div id="sidebar" class="sidebar">
             <ul>
                 <li><a href="index.html">Início</a></li>
                 <li><a href="Variaveis.html">Variáveis</a></li>
@@ -18,8 +20,8 @@
                 <li><a href="Listas.html">Listas</a></li>
                 <li><a href="#">Listas Aninhadas</a></li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    
     <main>
         <h2>Listas Aninhadas</h2>
         <p>Listas aninhadas são listas dentro de outras listas, ou seja, uma lista pode armazenar outras listas como seus elementos. Isso é útil para representar dados mais complexos, como matrizes ou tabelas.</p>
@@ -74,5 +76,6 @@ print(lista_aninhada[0][0])  # Acessa o primeiro item da primeira sublista (1)
         <h3>Resumo</h3>
         <p>Listas aninhadas permitem que você armazene coleções de listas, facilitando o gerenciamento de dados em múltiplas dimensões. Você pode criar listas aninhadas diretamente com colchetes ou utilizando o construtor <code>list()</code>. Acesse os itens internos usando múltiplos índices.</p>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>

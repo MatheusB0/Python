@@ -11,17 +11,21 @@
 
     <header>
         <h1>Início</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="Variaveis.html">Variáveis</a></li>
-                <li><a href="Estrutura_De_Controle.html">Estrutura de Controle</a></li>
-                <li><a href="Listas.html">Listas</a></li>
-                <li><a href="listas_aninhadas.html">Listas Aninhadas</a></li>
-            </ul>
-        </nav>
+        <button class="toggle-btn" onclick="toggleMenu()">☰</button>
     </header>
 
+  
+    <div id="sidebar" class="sidebar">
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="Variaveis.html">Variáveis</a></li>
+            <li><a href="Estrutura_De_Controle.html">Estrutura de Controle</a></li>
+            <li><a href="Listas.html">Listas</a></li>
+            <li><a href="listas_aninhadas.html">Listas Aninhadas</a></li>
+        </ul>
+    </div>
+
+    
     <main>
         <h2>Introdução ao Python</h2>
         <p>O Python é uma linguagem de programação de alto nível, interpretada e de fácil aprendizado, ideal para quem está começando a programar. Além disso, o Python é uma linguagem muito versátil, podendo ser usada para desenvolvimento web, automação, análise de dados, inteligência artificial, e muito mais.</p>
@@ -54,5 +58,6 @@ if True:
         </code></pre>
     </main>
 
+    <script src="script.js"></script>
 </body>
 </html>
