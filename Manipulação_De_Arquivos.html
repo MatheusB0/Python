@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Python/styles.css">
+    <link rel="shortcut icon" href="/Icons/python.ico" type="image/x-icon">
+    <title>Manipulação de Strings/Arquivos</title>
+</head>
+<body>
+    <header>
+        <h1>Manipulação de Strings/Arquivos</h1>
+        <button class="toggle-btn" onclick="toggleMenu()">☰</button>
+        <nav>
+            <span class="placeholder"></span>
+        </nav>
+    </header>
+
+  
+    <div id="sidebar" class="sidebar">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="Variaveis.html">Variáveis</a></li>
+            <li><a href="Estrutura_De_Controle.html">Estrutura de Controle</a></li>
+            <li><a href="Listas.html">Listas</a></li>
+            <li><a href="Dicionario.html">Dicionários</a></li>
+            <li><a href="Manipulação_De_Arquivos.html">Manipulação de Strings/Arquivos</a></li>
+        </ul>
+    </div>
+    <main>
+        <h2>1. Manipulação de Strings</h2>
+        <p>Strings são sequências de caracteres usadas para armazenar texto. Em Python, são representadas por aspas simples ('texto') ou duplas ("texto").</p>
+        <h3>1.1 Operações Básicas</h3>
+        <pre><code>
+            s1 = "Hello"
+            s2 = "World"
+            
+            # Concatenação (Juntar Strings)
+            resultado = s1 + " " + s2  # "Hello World"
+            
+            # Repetição
+            repetida = s1 * 3  # "HelloHelloHello"
+            
+            # Indexação (Acessar um caractere)
+            primeira_letra = s1[0]  # "H"
+            
+            # Fatiamento (Pegar parte da string)
+            pedaco = s1[1:4]  # "ell"
+
+        </code></pre>
+        <h3>1.2 Métodos Mais Usados</h3>
+        <pre><code>
+            texto = "  Python é incrível!  "
+
+            # Converter para maiúsculas e minúsculas
+            print(texto.upper())   # "  PYTHON É INCRÍVEL!  "
+            print(texto.lower())   # "  python é incrível!  "
+            
+            # Remover espaços extras
+            print(texto.strip())  # "Python é incrível!"
+            
+            # Substituir palavras
+            print(texto.replace("incrível", "fantástico"))  
+            # "  Python é fantástico!  "
+            
+            # Dividir uma string em uma lista
+            palavras = texto.split()  # ['Python', 'é', 'incrível!']
+            
+        </code></pre>
+        <h2>2. Manipulação de Arquivos</h2>
+        <p>Python permite abrir, ler e escrever arquivos de maneira simples.</p>
+        <h3>2.1 Abrindo um Arquivo</h3>
+        <pre><code>
+        with open("arquivo.txt", "r") as f:
+            conteudo = f.read()
+        print(conteudo)  # Exibe o conteúdo do arquivo 
+        </code></pre>
+        <p>"<strong>r</strong>": leitura</p>
+
+        <p>"<strong>w</strong>": escrita (apaga o conteúdo anterior)</p>
+            
+        <p>"<strong>a</strong>": acrescenta ao final</p>
+            
+        <p>"<strong>b</strong>": modo binário</p>
+        <h3>2.2 Lendo Arquivos Linha por Linha</h3>
+        <pre><code>
+            with open("arquivo.txt", "r") as f:
+                for linha in f:
+                    print(linha.strip())</code></pre>
+        <h3>2.3 Escrevendo em um Arquivo</h3>
+        <pre><code>
+            with open("arquivo.txt", "w") as f:
+            f.write("Aprendendo Python!\n")</code></pre>
+        <p>Se quiser adicionar sem apagar o conteúdo:</p>
+        <pre><code>
+            with open("arquivo.txt", "a") as f:
+            f.write("Adicionando mais texto.\n")</code></pre>
+        <h3>2.4 Trabalhando com Arquivos CSV</h3>
+        <pre><code>
+            import csv
+            with open("dados.csv", "r") as f:
+                leitor = csv.reader(f)
+                    for linha in leitor:
+                        print(linha)</code></pre>
+        <p>Escrever em CSV:</p>
+        <pre><code>
+            with open("dados.csv", "w", newline='') as f:
+            escritor = csv.writer(f)
+            escritor.writerow(["Nome", "Idade"])
+            escritor.writerow(["Alice", 30])</code></pre>
+        <h3>2.5 Trabalhando com JSON</h3>
+        <pre><code>
+            import json
+            with open("dados.json", "r") as f:
+                dados = json.load(f)
+            print(dados)</code></pre>
+        <p>Salvar dados em JSON:</p>
+        <pre><code>
+            dados = {"nome": "Alice", "idade": 30}
+            with open("dados.json", "w") as f:
+                json.dump(dados, f, indent=4) </code></pre>
+        <h3>2.6 Tratamento de Erros ao Trabalhar com Arquivos</h3>
+        <pre><code>
+            try:
+                with open("arquivo_inexistente.txt", "r") as f:
+                    conteudo = f.read()
+            except FileNotFoundError:
+                print("Arquivo não encontrado!")</code></pre>
+    </main>
+    <script src="/Python/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dicionários Aninhados em Python</title>
+    <link rel="stylesheet" href="/Python/styles.css">
+    <link rel="shortcut icon" href="Icons/python.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Dicionários Aninhados em Python</h1>
+        <button class="toggle-btn" onclick="toggleMenu()">☰</button>
+        <nav>
+            <ul>
+                <li><a href="Dicionario.html">Dicionários</a></li>
+                <li><a href="#">Dicionários Aninhados</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  
+    <div id="sidebar" class="sidebar">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="Variaveis.html">Variáveis</a></li>
+            <li><a href="Estrutura_De_Controle.html">Estrutura de Controle</a></li>
+            <li><a href="Listas.html">Listas</a></li>
+            <li><a href="Dicionario.html">Dicionários</a></li>
+            <li><a href="Manipulação_De_Arquivos.html">Manipulação de Strings/Arquivos</a></li>
+        </ul>
+    </div>
+    <main>
+        <p>Dicionários aninhados são dicionários dentro de dicionários. Eles são úteis para organizar dados hierárquicos ou estruturados de forma complexa.</p>
+        <h2>Criando um Dicionário Aninhado</h2>
+        <p>Podemos criar um dicionário onde os valores também são dicionários:</p>
+        <pre><code>
+            empresa = {
+                "nome": "Tech Corp",
+                "departamentos": {
+                    "TI": {"funcionarios": 10, "orçamento": 50000},
+                    "RH": {"funcionarios": 5, "orçamento": 20000}
+                }
+            }</code></pre>
+            <h2>Acessando Elementos</h2>
+
+            <p>Para acessar um valor dentro de um dicionário aninhado, basta encadear as chaves:</p>
+
+            <pre><code>print(empresa["departamentos"]["TI"]["funcionarios"])  # Saída: 10</code></pre>
+
+            <h2>Modificando um Dicionário Aninhado</h2>
+
+            <p>Podemos modificar os valores normalmente:</p>
+
+            <pre><code>empresa["departamentos"]["RH"]["funcionarios"] = 7</code></pre>
+
+            <p>Também podemos adicionar novos subdicionários:</p>
+
+            <pre><code>empresa["departamentos"]["Financeiro"] = {"funcionarios": 8, "orçamento": 30000}</code></pre>
+
+            <h2>Removendo Elementos</h2>
+            <p>Podemos remover um subdicionário usando <strong>del</strong> ou <strong>pop()</strong>:</p>
+            <pre><code>del empresa["departamentos"]["RH"]</code></pre>
+            <pre><code>financeiro = empresa["departamentos"].pop("Financeiro")</code></pre>
+            <h2>Iterando sobre Dicionários Aninhados</h2>
+            <p>Para percorrer um dicionário aninhado, utilizamos loops aninhados:</p>
+            <pre><code>             for depto, dados in empresa["departamentos"].items():
+                    print(f"Departamento: {depto}")
+                        for chave, valor in dados.items():
+                            print(f"  {chave}: {valor}")</code></pre>
+            <h2>Quando Usar um Dicionário Aninhado?</h2>
+            <ul class="circle">
+                <li>Quando os dados possuem uma estrutura hierárquica.</li>
+                <li>Para representar relações complexas entre elementos.</li>
+                <li>Quando precisamos armazenar múltiplos conjuntos de dados relacionados.</li>
+            </ul>
+            <p>Dicionários aninhados tornam o armazenamento e a manipulação de dados mais organizados e eficientes.</p>
+    </main>
+
+    <script src="/Python/script.js"></script>
+</body>
+</html>

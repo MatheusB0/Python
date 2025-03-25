@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Python/styles.css">
+    <link rel="shortcut icon" href="Icons/python.ico" type="image/x-icon">
+    <title>Dicionários</title>
+</head>
+<body>
+    <header>
+        <h1>Dicionários em Python</h1>
+        <button class="toggle-btn" onclick="toggleMenu()">☰</button>
+        <nav>
+            <ul>
+                <li><a href="#">Dicionários</a></li>
+                <li><a href="Dicionario_Aninhado.html">Dicionários Aninhados</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  
+    <div id="sidebar" class="sidebar">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="Variaveis.html">Variáveis</a></li>
+            <li><a href="Estrutura_De_Controle.html">Estrutura de Controle</a></li>
+            <li><a href="Listas.html">Listas</a></li>
+            <li><a href="#">Dicionários</a></li>
+            <li><a href="Manipulação_De_Arquivos.html">Manipulação de Strings/Arquivos</a></li>
+        </ul>
+    </div>
+    <main>
+        <p>Os dicionários são uma estrutura de dados fundamental em Python, permitindo armazenar pares <strong>chave-valor</strong>. Eles são muito úteis para organizar e acessar dados de forma eficiente.</p>
+        <h2>Criando um Dicionário</h2>
+        <p>Um dicionário é criado usando chaves <strong>{}</strong> e os elementos são definidos como <strong>chave: valor:</strong></p>
+        <pre><code># Exemplo de dicionário
+            meu_dicionario = {
+                "nome": "Carlos",
+                "idade": 25,
+                "cidade": "São Paulo"
+            }</code></pre>
+        <h2>Acessando Valores</h2>
+
+        <p>Podemos acessar valores no dicionário usando a chave correspondente:</p>
+
+        <pre><code>print(meu_dicionario["nome"])  # Saída: Carlos</code></pre>
+
+        <p>Para evitar erros caso a chave não exista, usamos o método <strong>get()</strong>:</p>
+
+        <pre><code>print(meu_dicionario.get("profissao", "Chave não encontrada"))</code></pre>
+
+        <h2>Modificando um Dicionário</h2>
+
+        <p>Podemos adicionar ou modificar elementos atribuindo um valor a uma chave:</p>
+
+        <pre><code>
+            meu_dicionario["idade"] = 26  # Modifica a idade
+            meu_dicionario["profissao"] = "Engenheiro"  # Adiciona uma nova chave</code></pre>
+
+        <h2>Removendo Elementos</h2>
+
+        <p>Para remover um item do dicionário:</p>
+
+        <pre><code>del meu_dicionario["cidade"]  # Remove a chave 'cidade'</code></pre>
+
+        <p>O método <strong>pop()</strong> também pode ser usado:</p>
+
+        <pre><code>idade = meu_dicionario.pop("idade")  # Remove e retorna o valor associado</code></pre>
+
+        <h2>Iterando sobre um Dicionário</h2>
+
+        <p>Podemos percorrer um dicionário com um loop <strong>for</strong>:</p>
+        <pre><code>
+            for chave, valor in meu_dicionario.items():
+                print(f"{chave}: {valor}")</code></pre>
+        <h2>Métodos úteis de Dicionários</h2>
+        <p>Python fornece vários métodos para manipular dicionários:</p>
+        <pre><code>
+            meu_dicionario.keys()    # Retorna todas as chaves
+            meu_dicionario.values()  # Retorna todos os valores
+            meu_dicionario.items()   # Retorna pares chave-valor
+            meu_dicionario.clear()   # Remove todos os elementos</code></pre>
+
+        <h2>Quando Usar um Dicionário?</h2>
+        <ul class="circle">
+            <li>Quando precisamos mapear relações entre chaves e valores.</li>
+            <li>Para armazenar configurações ou dados estruturados.</li>   
+            <li>Quando precisamos acessar elementos rapidamente através de uma chave.</li>
+        </ul>
+    </main>
+    <script src="/Python/script.js"></script>
+</body>
+</html>

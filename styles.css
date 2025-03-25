@@ -44,25 +44,29 @@ body {
 header {
     background-color: #306998;
     color: white;
-    padding: 15px 0px 15px 0px;
+    padding: 15px 0px 0px 0px;
     text-align: center;
+    margin: 0px 0px 0px 0px ;
 }
 
 header h1 {
     font-size: 2em;
 }
-
+nav .placeholder {
+    display: flex;
+    height: 31px; 
+}
 /* Navegação */
 nav {
-    background-color: #333333a8;
+    background-color: #333;
+    margin-top: 5px;
 }
 
 nav ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
-    padding: 10px 0;
-    margin: 0;
+    margin-top: 5px;
 }
 
 nav ul li {
@@ -72,12 +76,14 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.1em;
+    padding: 4.5px;
+    font-size: 1.2em;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #FFD43B;
+    background-color: #242424;
+    text-decoration: none;
 }
 
 /* Corpo principal */
@@ -155,7 +161,7 @@ code {
 /* Bloco de código */
 pre code {
     display: block;
-    background-color: #f4f4f4;
+    background-color: #f0f0f0;
     padding: 15px;
     margin-bottom: 20px;
     border-radius: 5px;
@@ -183,6 +189,7 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
 .red {
     background-color: white;
     color: red;
@@ -192,7 +199,7 @@ a:hover {
 }
 .toggle-btn {
     font-size: 30px;
-    background-color: #306998;
+    background-color: transparent;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -201,12 +208,8 @@ a:hover {
     left: 20px;
     z-index: 1000;
     cursor: pointer;
-     transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease-in-out;
 }
-.toggle-btn.active {
-    background-color: #333;
-}
-
 
 .sidebar {
     height: 100%;
